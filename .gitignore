@@ -1,6 +1,32 @@
+# Backups and autosaves
 *-backups/
-*.lck
-fp-info-cache
-*-cache.lib
-*.kicad_prl
+*.bak
+*.bck
+*~
 _autosave-*
+*-bak
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-save.*
+*.tmp
+
+# Caches
+fp-info-cache
+*-cache.*
+
+# Per-user UI state (window layout, visible layers, etc.)
+*.kicad_prl
+
+# Generated, regenerable outputs
+*.net
+*.dsn
+*.ses
+*-gerbers/
+fab/
+
+# KiCad lock files
+~*.lck
+*.lck
+
+# KiCad local history (KiCad 9+)
+.history/
