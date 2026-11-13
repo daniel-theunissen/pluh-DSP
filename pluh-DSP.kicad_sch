@@ -372,7 +372,27 @@
 	)
 	(wire
 		(pts
-			(xy 17.78 92.71) (xy 22.86 92.71)
+			(xy 30.48 44.45) (xy 50.8 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05ecb609-12e9-4fa6-9c69-73b00aaf32af")
+	)
+	(wire
+		(pts
+			(xy 30.48 39.37) (xy 30.48 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2789ddb0-fc53-4821-b2bb-04c92df51c88")
+	)
+	(wire
+		(pts
+			(xy 21.59 31.75) (xy 22.86 31.75)
 		)
 		(stroke
 			(width 0)
@@ -382,7 +402,7 @@
 	)
 	(wire
 		(pts
-			(xy 17.78 92.71) (xy 17.78 95.25)
+			(xy 21.59 31.75) (xy 21.59 35.56)
 		)
 		(stroke
 			(width 0)
@@ -390,57 +410,39 @@
 		)
 		(uuid "42d5df78-becb-4517-9d7f-f56d94bd0140")
 	)
-	(global_label "in_n"
-		(shape input)
-		(at 30.48 100.33 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
+	(wire
+		(pts
+			(xy 38.1 31.75) (xy 50.8 31.75)
 		)
-		(uuid "02195de3-f822-411c-a908-e1692ff7e250")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 37.3356 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
+		(stroke
+			(width 0)
+			(type default)
 		)
+		(uuid "9dafbc43-d775-480d-8e83-1643f2231e36")
 	)
-	(global_label "in_p"
-		(shape input)
-		(at 38.1 92.71 0)
-		(fields_autoplaced yes)
+	(label "in_n"
+		(at 41.91 44.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify left bottom)
 		)
-		(uuid "1a6b9811-e2e0-4b46-a279-fde47e7f71f9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 44.9556 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
+		(uuid "7bd3e016-9122-4e46-b1e7-53190523f066")
+	)
+	(label "in_p"
+		(at 41.91 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left bottom)
 		)
+		(uuid "e1b89795-a123-4a39-a8ff-411c9c229fb3")
 	)
 	(symbol
 		(lib_id "Connector_Audio:XLR3")
-		(at 30.48 92.71 0)
+		(at 30.48 31.75 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -451,7 +453,7 @@
 		(fields_autoplaced yes)
 		(uuid "127bddef-90d7-4580-84c5-08d4ab89429d")
 		(property "Reference" "J1"
-			(at 30.48 82.55 0)
+			(at 30.48 21.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -461,7 +463,7 @@
 			)
 		)
 		(property "Value" "XLR3"
-			(at 30.48 85.09 0)
+			(at 30.48 24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -471,7 +473,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 30.48 92.71 0)
+			(at 30.48 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -482,7 +484,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 30.48 92.71 0)
+			(at 30.48 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -493,7 +495,7 @@
 			)
 		)
 		(property "Description" "XLR Connector, Male or Female, 3 Pins"
-			(at 30.48 92.71 0)
+			(at 30.48 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -523,7 +525,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 17.78 95.25 0)
+		(at 21.59 35.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -534,7 +536,7 @@
 		(fields_autoplaced yes)
 		(uuid "e141cb63-9e03-42b8-a825-0a36adafdacb")
 		(property "Reference" "#PWR01"
-			(at 17.78 101.6 0)
+			(at 21.59 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -545,7 +547,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 17.78 100.33 0)
+			(at 21.59 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -555,7 +557,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 17.78 95.25 0)
+			(at 21.59 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -566,7 +568,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 17.78 95.25 0)
+			(at 21.59 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -577,7 +579,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 17.78 95.25 0)
+			(at 21.59 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -600,8 +602,8 @@
 		)
 	)
 	(sheet
-		(at 15.24 15.24)
-		(size 86.36 60.96)
+		(at 50.8 25.4)
+		(size 24.13 24.13)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -616,7 +618,7 @@
 		)
 		(uuid "76b02d6a-0144-479c-ab47-59e278ee2515")
 		(property "Sheetname" "preamp"
-			(at 15.24 14.5284 0)
+			(at 50.8 24.6884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -627,7 +629,7 @@
 			)
 		)
 		(property "Sheetfile" "preamp.kicad_sch"
-			(at 15.24 76.7846 0)
+			(at 50.8 50.1146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -635,6 +637,46 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "adc_n" input
+			(at 74.93 44.45 0)
+			(uuid "5b46cf7a-0086-4243-be65-023127db1eea")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "adc_p" input
+			(at 74.93 31.75 0)
+			(uuid "62a1fe41-310f-4a17-a78c-010319016db3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "in_n" input
+			(at 50.8 44.45 180)
+			(uuid "f591e34e-ac72-4646-91f5-de917883c000")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "in_p" input
+			(at 50.8 31.75 180)
+			(uuid "3239731f-f645-4ece-a02a-53756cfae314")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
