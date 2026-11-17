@@ -1217,6 +1217,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "decoupling as per PCM1821 datasheet"
+		(exclude_from_sim no)
+		(at 112.522 33.782 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "16a8e047-48ee-4218-9001-9ee942d2f9f4")
+	)
 	(junction
 		(at 62.23 119.38)
 		(diameter 0)
@@ -1228,6 +1238,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "12c59b4c-7d56-4885-860c-fed8f93366fa")
+	)
+	(junction
+		(at 41.91 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "19cd0479-5a50-4893-b7c2-10241c34fcfc")
 	)
 	(junction
 		(at 100.33 107.95)
@@ -1258,6 +1274,16 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a9b105be-4963-4918-9c3d-949ecbf44060")
+	)
+	(wire
+		(pts
+			(xy 41.91 49.53) (xy 41.91 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10a88c18-0158-4c11-86d7-9aeaf56e4af3")
 	)
 	(wire
 		(pts
@@ -1351,6 +1377,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 50.8) (xy 106.68 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b761e04-70f1-4ce7-ab2b-07679a4e649c")
+	)
+	(wire
+		(pts
 			(xy 80.01 82.55) (xy 80.01 73.66)
 		)
 		(stroke
@@ -1391,6 +1427,26 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 39.37) (xy 41.91 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ce7734d-532e-4f75-9d97-cd013f0fbf88")
+	)
+	(wire
+		(pts
+			(xy 41.91 36.83) (xy 41.91 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d559410-2089-457c-b2f6-84656d8ecab1")
+	)
+	(wire
+		(pts
 			(xy 128.27 72.39) (xy 133.35 72.39)
 		)
 		(stroke
@@ -1408,6 +1464,16 @@
 			(type default)
 		)
 		(uuid "95a568cc-3ee3-41ed-b6de-7fd099e7242b")
+	)
+	(wire
+		(pts
+			(xy 41.91 39.37) (xy 55.88 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a14e5cf9-11de-4fb3-8406-576421b7e111")
 	)
 	(wire
 		(pts
@@ -1438,6 +1504,16 @@
 			(type default)
 		)
 		(uuid "b2fbbbdb-24cd-47a2-b016-156f05794dce")
+	)
+	(wire
+		(pts
+			(xy 41.91 26.67) (xy 41.91 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb61ade3-b51c-4067-ad21-f508f85f53be")
 	)
 	(wire
 		(pts
@@ -1632,6 +1708,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 41.91 26.67 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0ff279f3-44b3-4189-b056-cb21195f617d")
+		(property "Reference" "#PWR07"
+			(at 41.91 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3A"
+			(at 41.91 21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 41.91 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "66078e41-5631-47ad-9b28-74c0b4d67255")
+		)
+		(instances
+			(project "pluh-DSP"
+				(path "/9a153097-f6e5-4cb8-a13e-a5498f00479c/76b02d6a-0144-479c-ab47-59e278ee2515"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "pluh-DSP:OPA2365AID")
 		(at 88.9 118.11 0)
 		(mirror x)
@@ -1776,6 +1930,244 @@
 				(path "/9a153097-f6e5-4cb8-a13e-a5498f00479c/76b02d6a-0144-479c-ab47-59e278ee2515"
 					(reference "U1")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 41.91 33.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "17bd0184-f410-4895-bf37-57b7e9ee3296")
+		(property "Reference" "R8"
+			(at 44.45 31.7499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 44.45 34.2899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.132 33.02 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 41.91 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f36ea23f-7388-483c-8d2c-492021a21d06")
+		)
+		(pin "2"
+			(uuid "43d53784-d498-4dbe-9d48-d624629c7373")
+		)
+		(instances
+			(project "pluh-DSP"
+				(path "/9a153097-f6e5-4cb8-a13e-a5498f00479c/76b02d6a-0144-479c-ab47-59e278ee2515"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 106.68 43.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "18144e74-fcdf-4609-be40-f4c4e36d790c")
+		(property "Reference" "#PWR09"
+			(at 106.68 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3A"
+			(at 106.68 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 106.68 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ced90fdf-62f1-488b-ae36-7482b62206a0")
+		)
+		(instances
+			(project "pluh-DSP"
+				(path "/9a153097-f6e5-4cb8-a13e-a5498f00479c/76b02d6a-0144-479c-ab47-59e278ee2515"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+1V35")
+		(at 55.88 39.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "21260ae8-a14a-420f-b7d6-2e0fcefa24a7")
+		(property "Reference" "#PWR08"
+			(at 55.88 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+1V65"
+			(at 55.88 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 55.88 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+1V35\""
+			(at 55.88 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "70277ca4-f48f-47d4-862a-06d2daffabc9")
+		)
+		(instances
+			(project "pluh-DSP"
+				(path "/9a153097-f6e5-4cb8-a13e-a5498f00479c/76b02d6a-0144-479c-ab47-59e278ee2515"
+					(reference "#PWR08")
+					(unit 1)
 				)
 			)
 		)
@@ -2019,6 +2411,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 106.68 46.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3df2eff8-7148-4363-9a28-5db31556dd27")
+		(property "Reference" "C5"
+			(at 110.49 45.7199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 110.49 48.2599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.6452 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 106.68 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1c36a61a-78e5-4cba-81cf-1d33c6e04dcc")
+		)
+		(pin "2"
+			(uuid "aaeed8e2-191f-45d3-9fd3-b8ed85a31d3a")
+		)
+		(instances
+			(project "pluh-DSP"
+				(path "/9a153097-f6e5-4cb8-a13e-a5498f00479c/76b02d6a-0144-479c-ab47-59e278ee2515"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 62.23 64.77 0)
 		(unit 1)
@@ -2095,6 +2569,84 @@
 			(project "pluh-DSP"
 				(path "/9a153097-f6e5-4cb8-a13e-a5498f00479c/76b02d6a-0144-479c-ab47-59e278ee2515"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 41.91 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "45b4b8af-f389-4c33-a930-f39978bdcb89")
+		(property "Reference" "#PWR06"
+			(at 41.91 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 41.91 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 41.91 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5d9036a5-075b-4f03-844e-f1d22f493980")
+		)
+		(instances
+			(project "pluh-DSP"
+				(path "/9a153097-f6e5-4cb8-a13e-a5498f00479c/76b02d6a-0144-479c-ab47-59e278ee2515"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -2218,34 +2770,112 @@
 			)
 		)
 		(pin "7"
-			(uuid "1a2779f2-6c53-43be-b01a-5616dd027dd3")
+			(uuid "1a2779f2-6c53-43be-b01a-5616dd027dd4")
 		)
 		(pin "8"
-			(uuid "ca41c49b-c7ef-4a20-a10d-a8f706f1ae5a")
+			(uuid "ca41c49b-c7ef-4a20-a10d-a8f706f1ae5b")
 		)
 		(pin "3"
-			(uuid "95f17ba5-facd-4c07-8179-e396d441a8f6")
+			(uuid "95f17ba5-facd-4c07-8179-e396d441a8f7")
 		)
 		(pin "2"
-			(uuid "0afa84eb-fc08-4209-99fd-b7498549db06")
+			(uuid "0afa84eb-fc08-4209-99fd-b7498549db07")
 		)
 		(pin "4"
-			(uuid "0bc32fc8-7f54-46ed-bec5-21190550d44f")
+			(uuid "0bc32fc8-7f54-46ed-bec5-21190550d450")
 		)
 		(pin "1"
-			(uuid "1515297f-1ccc-438d-bd0f-3e2c7b783540")
+			(uuid "1515297f-1ccc-438d-bd0f-3e2c7b783541")
 		)
 		(pin "5"
-			(uuid "7c181bb7-e558-4967-93cd-30244ad9a1ad")
+			(uuid "7c181bb7-e558-4967-93cd-30244ad9a1ae")
 		)
 		(pin "6"
-			(uuid "94471cbe-092d-473a-b23d-4c8946b72ab5")
+			(uuid "94471cbe-092d-473a-b23d-4c8946b72ab6")
 		)
 		(instances
 			(project "pluh-DSP"
 				(path "/9a153097-f6e5-4cb8-a13e-a5498f00479c/76b02d6a-0144-479c-ab47-59e278ee2515"
 					(reference "U1")
 					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 106.68 53.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "51200b48-2dc6-43a7-9b2f-10beb9903fff")
+		(property "Reference" "#PWR010"
+			(at 106.68 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 106.68 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 106.68 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ad5fd636-9df0-4c85-baa6-133cb3a865c6")
+		)
+		(instances
+			(project "pluh-DSP"
+				(path "/9a153097-f6e5-4cb8-a13e-a5498f00479c/76b02d6a-0144-479c-ab47-59e278ee2515"
+					(reference "#PWR010")
+					(unit 1)
 				)
 			)
 		)
@@ -2607,28 +3237,28 @@
 			)
 		)
 		(pin "7"
-			(uuid "1a2779f2-6c53-43be-b01a-5616dd027dd3")
+			(uuid "1a2779f2-6c53-43be-b01a-5616dd027dd5")
 		)
 		(pin "8"
-			(uuid "ca41c49b-c7ef-4a20-a10d-a8f706f1ae5a")
+			(uuid "ca41c49b-c7ef-4a20-a10d-a8f706f1ae5c")
 		)
 		(pin "3"
-			(uuid "95f17ba5-facd-4c07-8179-e396d441a8f6")
+			(uuid "95f17ba5-facd-4c07-8179-e396d441a8f8")
 		)
 		(pin "2"
-			(uuid "0afa84eb-fc08-4209-99fd-b7498549db06")
+			(uuid "0afa84eb-fc08-4209-99fd-b7498549db08")
 		)
 		(pin "4"
-			(uuid "0bc32fc8-7f54-46ed-bec5-21190550d44f")
+			(uuid "0bc32fc8-7f54-46ed-bec5-21190550d451")
 		)
 		(pin "1"
-			(uuid "1515297f-1ccc-438d-bd0f-3e2c7b783540")
+			(uuid "1515297f-1ccc-438d-bd0f-3e2c7b783542")
 		)
 		(pin "5"
-			(uuid "7c181bb7-e558-4967-93cd-30244ad9a1ad")
+			(uuid "7c181bb7-e558-4967-93cd-30244ad9a1af")
 		)
 		(pin "6"
-			(uuid "94471cbe-092d-473a-b23d-4c8946b72ab5")
+			(uuid "94471cbe-092d-473a-b23d-4c8946b72ab7")
 		)
 		(instances
 			(project "pluh-DSP"
@@ -2872,6 +3502,88 @@
 			(project "pluh-DSP"
 				(path "/9a153097-f6e5-4cb8-a13e-a5498f00479c/76b02d6a-0144-479c-ab47-59e278ee2515"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 41.91 45.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cdbcbe40-93c8-4095-9dd3-71dddb044be5")
+		(property "Reference" "R9"
+			(at 44.45 44.4499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 44.45 46.9899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.132 45.72 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 41.91 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "41b93fc0-462a-4f69-abf9-0433a4731c52")
+		)
+		(pin "2"
+			(uuid "3fd967e1-8da8-4ebe-8b23-a432d8e35f8b")
+		)
+		(instances
+			(project "pluh-DSP"
+				(path "/9a153097-f6e5-4cb8-a13e-a5498f00479c/76b02d6a-0144-479c-ab47-59e278ee2515"
+					(reference "R9")
 					(unit 1)
 				)
 			)

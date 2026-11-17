@@ -382,6 +382,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 44.45) (xy 95.25 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ec137be-10e9-46f6-ae95-5910c1e7bd95")
+	)
+	(wire
+		(pts
 			(xy 30.48 39.37) (xy 30.48 44.45)
 		)
 		(stroke
@@ -420,6 +430,26 @@
 		)
 		(uuid "9dafbc43-d775-480d-8e83-1643f2231e36")
 	)
+	(wire
+		(pts
+			(xy 74.93 31.75) (xy 95.25 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9d33271-ce78-4e7a-b9b0-a8e09c11bd6c")
+	)
+	(label "adc_n"
+		(at 82.55 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2225c756-fb77-4e0a-b0d4-e727f3d444d5")
+	)
 	(label "in_n"
 		(at 41.91 44.45 0)
 		(effects
@@ -429,6 +459,16 @@
 			(justify left bottom)
 		)
 		(uuid "7bd3e016-9122-4e46-b1e7-53190523f066")
+	)
+	(label "adc_p"
+		(at 82.55 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a5573760-a6b8-4578-a141-9e70c00be00a")
 	)
 	(label "in_p"
 		(at 41.91 31.75 0)
@@ -597,6 +637,142 @@
 				(path "/9a153097-f6e5-4cb8-a13e-a5498f00479c"
 					(reference "#PWR01")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 95.25 25.4)
+		(size 23.495 24.765)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "2acbc419-a725-417c-9645-0685bf06f4b0")
+		(property "Sheetname" "adc"
+			(at 95.25 24.6884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "adc.kicad_sch"
+			(at 95.25 50.7496 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "BCLK" input
+			(at 118.745 39.37 0)
+			(uuid "2428ab35-7d0b-4589-9f15-b7a905635bd6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "FMT0" input
+			(at 114.935 50.165 270)
+			(uuid "b81ae6b5-0462-49ba-9a9e-50ed5dde4c08")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "FSYNC" input
+			(at 118.745 35.56 0)
+			(uuid "5c30055d-8731-4ff2-bf8a-65ca106377dc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MD0" input
+			(at 109.22 50.165 270)
+			(uuid "d0d583bf-f7b7-4550-9153-395792b54083")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MD1" input
+			(at 106.68 50.165 270)
+			(uuid "fe68c5d9-c6c1-4f57-b5b6-9b091db7f8d4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MSZ" input
+			(at 111.76 50.165 270)
+			(uuid "a5fcc962-a77b-4576-9240-58caa63b84b5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "adc_n" input
+			(at 95.25 44.45 180)
+			(uuid "699249a0-7e9f-4cb5-968a-bafea81ba7fc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "adc_p" input
+			(at 95.25 31.75 180)
+			(uuid "1cbdef60-41dc-4b93-8e32-1ca862928269")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SDOUT" output
+			(at 118.745 29.21 0)
+			(uuid "98e5b237-ee54-47e0-8d6b-f74d56069743")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "pluh-DSP"
+				(path "/9a153097-f6e5-4cb8-a13e-a5498f00479c"
+					(page "3")
 				)
 			)
 		)
