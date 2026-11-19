@@ -430,21 +430,13 @@
         "uuid": "9a153097-f6e5-4cb8-a13e-a5498f00479c"
       }
     ],
-    "used_designators": "#PWR1-18,C1-23,J1,R1-9,RV1,U1-3",
+    "used_designators": "#PWR1-71,#PWR77-78,C1-37,D1-5,J1-6,R1-34,RG1,RN1,RV1-2,S1-2,TP1-12,U1-8",
     "variants": []
   },
   "sheets": [
     [
       "9a153097-f6e5-4cb8-a13e-a5498f00479c",
       "Root"
-    ],
-    [
-      "76b02d6a-0144-479c-ab47-59e278ee2515",
-      "preamp"
-    ],
-    [
-      "2acbc419-a725-417c-9645-0685bf06f4b0",
-      "adc"
     ]
   ],
   "text_variables": {},
